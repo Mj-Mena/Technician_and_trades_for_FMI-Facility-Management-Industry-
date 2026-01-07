@@ -9,4 +9,8 @@ class Company extends Model
 {
     /** @use HasFactory<\Database\Factories\CompanyFactory> */
     use HasFactory;
+    public function techs()
+    {
+        return $this->hasMany(Technician::class);
+    }
 }

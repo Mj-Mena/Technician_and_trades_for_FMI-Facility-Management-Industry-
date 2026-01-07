@@ -18,10 +18,10 @@ class CompanyFactory extends Factory
     public function definition(): array
     {
         return [
-            'company_name' =>fake() -> Company(),
-            'address' =>fake() -> Company(),
-            'created_at' =>now(),
-            'updated_at' =>now(),
+            'company_name' => fake()->Company(),
+            'address' => fake()->Company(),
+            'created_at' => now(),
+            'updated_at' => now(),
         ];
     }
 }
