@@ -16,4 +16,8 @@ class Technician extends Model
     {
         return $this->belongsTo(Company::class);
     }
+    public function trades()
+    {
+        return $this->belongsToMany(Trades::class);
+    }
 }
